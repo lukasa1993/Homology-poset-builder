@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		36F0B8EEA4C8444699FC43E5 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 82FCF9F76503486CA1F39126 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				4A7087E2BD5D4BAFB6106C32 /* CMake Rules */,
+			);
+			dependencies = (
+				6D45DFA2C0B8486CA5472B0A /* PBXTargetDependency */,
+				6502290A23C94608AB2BAF9B /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		F5187136CB144434AEC93446 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2732A75943E54010A8408337 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				F27DA7F9942F4AA6944A46ED /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		5094FED8DCA64C2C9FF8E6D3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B7B92476D2C44DEBF6EC5A6 /* main.c */; settings = {COMPILER_FLAGS = ""; }; };
+		834C6DA58A0646128D68F146 /* file_util.c in Sources */ = {isa = PBXBuildFile; fileRef = 30D46B757A664755B9AE2D93 /* file_util.c */; settings = {COMPILER_FLAGS = ""; }; };
+		C674EAC08B474F70A760015B /* complex_struct.c in Sources */ = {isa = PBXBuildFile; fileRef = 8CBD3F1C633043F0BB9D1D58 /* complex_struct.c */; settings = {COMPILER_FLAGS = ""; }; };
+		E8F631ACFCE4438CBF173E48 /* simplex_basic.c in Sources */ = {isa = PBXBuildFile; fileRef = 29A34BBCCE9D48A0AD9B119D /* simplex_basic.c */; settings = {COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		58C2F41A0AE24009AE3DF204 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26F93DB0931C44768151EEA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB56C1819015454C9B414482;
+			remoteInfo = poset_builder;
+		};
+		826D19930E544CF589E2F1CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26F93DB0931C44768151EEA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5187136CB144434AEC93446;
+			remoteInfo = ZERO_CHECK;
+		};
+		A3C43411B181440AB15DBE14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26F93DB0931C44768151EEA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5187136CB144434AEC93446;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09F9F53C914A4EEA882C8592 /* file_util.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = file_util.h; sourceTree = SOURCE_ROOT; };
+		191ED793379E4806B19A2A83 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		29A34BBCCE9D48A0AD9B119D /* simplex_basic.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = simplex_basic.c; sourceTree = SOURCE_ROOT; };
+		30D46B757A664755B9AE2D93 /* file_util.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = file_util.c; sourceTree = SOURCE_ROOT; };
+		4A9CC916816B453B8BB23C13 /* simplex_basic.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = simplex_basic.h; sourceTree = SOURCE_ROOT; };
+		4B7B92476D2C44DEBF6EC5A6 /* main.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = main.c; sourceTree = SOURCE_ROOT; };
+		6F2EE025305F4ECC8B6219C5 /* complex_struct.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = complex_struct.h; sourceTree = SOURCE_ROOT; };
+		8CBD3F1C633043F0BB9D1D58 /* complex_struct.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = complex_struct.c; sourceTree = SOURCE_ROOT; };
+		9A1DB40875354C49A468DF30 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A30D2B36EE0544018A4CF9E6 /* poset_builder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = poset_builder; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7F9AB9ED9D04AFDB920D0EF /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		09F282892C114C74BD1D3067 = {
+			isa = PBXGroup;
+			children = (
+				31095620C65C4C8F99D68D37 /* Sources */,
+				2423BB313F334F30A09207CA /* Resources */,
+				3F2081C50CC84AF0A8B5A1A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		235B009CB23943FB8D5160FA /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		2423BB313F334F30A09207CA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		31095620C65C4C8F99D68D37 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				852DC53612BA4907888AC20D /* ZERO_CHECK */,
+				3A1AF90C8F8D47E2AA9D779F /* ALL_BUILD */,
+				56F0EC1E85F040C588346C85 /* poset_builder */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		3A1AF90C8F8D47E2AA9D779F /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				235B009CB23943FB8D5160FA /* CMake Rules */,
+				C7F9AB9ED9D04AFDB920D0EF /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		3F2081C50CC84AF0A8B5A1A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A30D2B36EE0544018A4CF9E6 /* poset_builder */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E5DF093546A4F86B0B98247 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F2EE025305F4ECC8B6219C5 /* complex_struct.h */,
+				09F9F53C914A4EEA882C8592 /* file_util.h */,
+				4A9CC916816B453B8BB23C13 /* simplex_basic.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		56F0EC1E85F040C588346C85 /* poset_builder */ = {
+			isa = PBXGroup;
+			children = (
+				C63F92019215482B959B0102 /* Source Files */,
+				4E5DF093546A4F86B0B98247 /* Header Files */,
+				191ED793379E4806B19A2A83 /* CMakeLists.txt */,
+			);
+			name = poset_builder;
+			sourceTree = "<group>";
+		};
+		5BFC0F31E3114660B2AB1B4F /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		852DC53612BA4907888AC20D /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				5BFC0F31E3114660B2AB1B4F /* CMake Rules */,
+				9A1DB40875354C49A468DF30 /* CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		C63F92019215482B959B0102 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CBD3F1C633043F0BB9D1D58 /* complex_struct.c */,
+				30D46B757A664755B9AE2D93 /* file_util.c */,
+				4B7B92476D2C44DEBF6EC5A6 /* main.c */,
+				29A34BBCCE9D48A0AD9B119D /* simplex_basic.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB56C1819015454C9B414482 /* poset_builder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB81C9C8E9FA42A5A6ADC3C0 /* Build configuration list for PBXNativeTarget "poset_builder" */;
+			buildPhases = (
+				CEE1F1EAA6734A869548AFDC /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE0DFC420DD64C8D999BE7F6 /* PBXTargetDependency */,
+			);
+			name = poset_builder;
+			productName = poset_builder;
+			productReference = A30D2B36EE0544018A4CF9E6 /* poset_builder */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26F93DB0931C44768151EEA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0710;
+			};
+			buildConfigurationList = D98CA57E67E042028288859B /* Build configuration list for PBXProject "poset_builder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 09F282892C114C74BD1D3067;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36F0B8EEA4C8444699FC43E5 /* ALL_BUILD */,
+				F5187136CB144434AEC93446 /* ZERO_CHECK */,
+				DB56C1819015454C9B414482 /* poset_builder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A7087E2BD5D4BAFB6106C32 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/lukasa/ClionProjects/poset-builder -f /Users/lukasa/ClionProjects/poset-builder/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		F27DA7F9942F4AA6944A46ED /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/lukasa/ClionProjects/poset-builder -f /Users/lukasa/ClionProjects/poset-builder/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEE1F1EAA6734A869548AFDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C674EAC08B474F70A760015B /* complex_struct.c in Sources */,
+				834C6DA58A0646128D68F146 /* file_util.c in Sources */,
+				5094FED8DCA64C2C9FF8E6D3 /* main.c in Sources */,
+				E8F631ACFCE4438CBF173E48 /* simplex_basic.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6502290A23C94608AB2BAF9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB56C1819015454C9B414482 /* poset_builder */;
+			targetProxy = 58C2F41A0AE24009AE3DF204 /* PBXContainerItemProxy */;
+		};
+		6D45DFA2C0B8486CA5472B0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5187136CB144434AEC93446 /* ZERO_CHECK */;
+			targetProxy = 826D19930E544CF589E2F1CD /* PBXContainerItemProxy */;
+		};
+		BE0DFC420DD64C8D999BE7F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5187136CB144434AEC93446 /* ZERO_CHECK */;
+			targetProxy = A3C43411B181440AB15DBE14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1603EB6016F8427C8E2162CB /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lukasa/ClionProjects/poset-builder";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		256523F1AB624081B68E5BB1 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lukasa/ClionProjects/poset-builder";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		2750AC39B0FF45B294CF395A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lukasa/ClionProjects/poset-builder";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		375C7BFEE5A64DD99B69E225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lukasa/ClionProjects/poset-builder";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		4340DAB5204F4085980D114C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lukasa/ClionProjects/poset-builder";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		5B83DDDD51A54EC3A29A1A3A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/lukasa/ClionProjects/poset-builder/build/bin/RelWithDebInfo";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-std=c99",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = poset_builder;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lukasa/ClionProjects/poset-builder";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		894EA84D8426428DAE894F25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/lukasa/ClionProjects/poset-builder/build/bin/Debug";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-std=c99     ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = poset_builder;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lukasa/ClionProjects/poset-builder";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		93B3A38AE25648FFBC26E240 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lukasa/ClionProjects/poset-builder";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		9E4F7A788B5E4111B8FE459A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = "/Users/lukasa/ClionProjects/poset-builder/build";
+			};
+			name = Release;
+		};
+		9EC858E60B9B446E8B998A9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = "/Users/lukasa/ClionProjects/poset-builder/build";
+			};
+			name = Debug;
+		};
+		BD487630494445A3BE9AFCC6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = "/Users/lukasa/ClionProjects/poset-builder/build";
+			};
+			name = MinSizeRel;
+		};
+		C22A6C3EEA564D29B9AB40ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/lukasa/ClionProjects/poset-builder/build/bin/Release";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-std=c99",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = poset_builder;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lukasa/ClionProjects/poset-builder";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		CEA69E3075DC46D69F852998 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/lukasa/ClionProjects/poset-builder/build/bin/MinSizeRel";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-std=c99",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = poset_builder;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lukasa/ClionProjects/poset-builder";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		D3F44641D9A54922BE2241B4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = "/Users/lukasa/ClionProjects/poset-builder/build";
+			};
+			name = RelWithDebInfo;
+		};
+		E91260401AD943909D5430F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lukasa/ClionProjects/poset-builder";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		EE75A4898FB048E3936BE392 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lukasa/ClionProjects/poset-builder";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2732A75943E54010A8408337 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				375C7BFEE5A64DD99B69E225 /* Debug */,
+				E91260401AD943909D5430F5 /* Release */,
+				1603EB6016F8427C8E2162CB /* MinSizeRel */,
+				2750AC39B0FF45B294CF395A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		82FCF9F76503486CA1F39126 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93B3A38AE25648FFBC26E240 /* Debug */,
+				4340DAB5204F4085980D114C /* Release */,
+				EE75A4898FB048E3936BE392 /* MinSizeRel */,
+				256523F1AB624081B68E5BB1 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BB81C9C8E9FA42A5A6ADC3C0 /* Build configuration list for PBXNativeTarget "poset_builder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				894EA84D8426428DAE894F25 /* Debug */,
+				C22A6C3EEA564D29B9AB40ED /* Release */,
+				CEA69E3075DC46D69F852998 /* MinSizeRel */,
+				5B83DDDD51A54EC3A29A1A3A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D98CA57E67E042028288859B /* Build configuration list for PBXProject "poset_builder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EC858E60B9B446E8B998A9B /* Debug */,
+				9E4F7A788B5E4111B8FE459A /* Release */,
+				BD487630494445A3BE9AFCC6 /* MinSizeRel */,
+				D3F44641D9A54922BE2241B4 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26F93DB0931C44768151EEA1 /* Project object */;
+}
