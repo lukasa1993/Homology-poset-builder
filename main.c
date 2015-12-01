@@ -129,12 +129,13 @@ int main(int argc, char *argv[]) {
 
     printf("\n Max FSI Indexes: %s \n", simplexToLiteral(max_fsi));
     fflush(stdout);
+    line_number  = 0;
     fsin = 0;
     file = fopen(fileName, "r");
     while (fgets(line, sizeof(line), file)) {
         line_number++;
 
-        if (line_number < 2) continue;
+        if (line_number == 1) continue;
         Complex *fsi = literalToComplex(line);
 
         if (fsi == NULL) {
