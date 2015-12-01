@@ -18,7 +18,7 @@ bool simp_binary_search(Simplex *simp, SimplexElem search);
 
 int main(int argc, char *argv[]) {
     clock_t begin, end;
-    double time_spent;
+    double  time_spent;
     begin = clock();
 
     char const *const fileName = argv[1];
@@ -26,13 +26,13 @@ int main(int argc, char *argv[]) {
     char line[256];
 
     int line_number = 0;
-    int fsin = 0;
+    int fsin        = 0;
 
     Complex *A, *B;
-    int bPoints;
+    int     bPoints;
 
     Complex *poset_matrix = Init_Complex();
-    int poset_matrix_size;
+    int     poset_matrix_size;
 
     while (fgets(line, sizeof(line), file)) {
         line_number++;
@@ -44,7 +44,7 @@ int main(int argc, char *argv[]) {
             A = literalToComplex((char *) AL);
             B = literalToComplex((char *) BL);
 
-            bPoints = CalculatePoints(B);
+            bPoints           = CalculatePoints(B);
             poset_matrix_size = bPoints * bPoints;
 
             for (int i = 0; i < poset_matrix_size + 1; ++i) {
@@ -60,8 +60,8 @@ int main(int argc, char *argv[]) {
             fsin++;
 
             for (int i = 0; i < fsi->simplexCount; ++i) {
-                Simplex *simp = getSimpexAt(fsi, i);
-                for (int j = 0; j < simp->elementCount; ++j) {
+                Simplex  *simp = getSimpexAt(fsi, i);
+                for (int j     = 0; j < simp->elementCount; ++j) {
                     SimplexElem elem = getElementAt(simp, j);
 
                     Simplex *posetSimp = getSimpexAt(poset_matrix, (i * bPoints) + (elem - 1));
@@ -76,18 +76,23 @@ int main(int argc, char *argv[]) {
     fclose(file);
 
 
-
     clock_t begin1, end1;
-    double time_spent1;
+    double  time_spent1;
     begin1 = clock();
     srand((unsigned int) time(NULL));
-    int printCount = 500 + (rand() % 500);
+    int printCount = 500;
 
     Simplex *max_fsi = Init_Simplex();
 
-    for (int i = 1; i <= fsin; ++i) {
-        Complex *poset_col = Init_Complex();
-        for (int j = 0; j < poset_matrix->simplexCount; ++j) {
+    int fsin_start = 1;
+    int fsin_end   = fsin;
+
+    fsin_start = 269124;
+    fsin_end   = 269164;
+
+    for (int i = fsin_start; i <= fsin_end; ++i) {
+        Complex  *poset_col = Init_Complex();
+        for (int j          = 0; j < poset_matrix->simplexCount; ++j) {
             Simplex *poset = getSimpexAt(poset_matrix, j);
 
             if (simp_binary_search(poset, i)) {
@@ -95,8 +100,8 @@ int main(int argc, char *argv[]) {
             }
         }
 
-        Simplex *intersection = simplex_intersection(getSimpexAt(poset_col, 0), getSimpexAt(poset_col, 1));
-        for (int k = 2; k < poset_col->simplexCount; ++k) {
+        Simplex  *intersection = simplex_intersection(getSimpexAt(poset_col, 0), getSimpexAt(poset_col, 1));
+        for (int k             = 2; k < poset_col->simplexCount; ++k) {
             Simplex *poset = getSimpexAt(poset_col, k);
 
 
@@ -112,26 +117,23 @@ int main(int argc, char *argv[]) {
         Dest_Simplex(intersection);
 
         if (i >= printCount) {
-            end1 = clock();
+            end1        = clock();
             time_spent1 = (double) (end1 - begin1) / CLOCKS_PER_SEC;
 
-            int tmpRand = 500 + (rand() % 500);
-
-            printf("\nTime: %f; Amount:%d; | %d/%d | MaxFound: %d\n", time_spent1, tmpRand, i, fsin,
-                   max_fsi->elementCount);
+            printf("\nTime: %f; | %d/%d | MaxFound: %d\n", time_spent1, i, fsin, max_fsi->elementCount);
             fflush(stdout);
 
             begin1 = clock();
-            printCount += tmpRand;
+            printCount += printCount;
         }
     }
 
 
     printf("\n Max FSI Indexes: %s \n", simplexToLiteral(max_fsi));
     fflush(stdout);
-    line_number  = 0;
-    fsin = 0;
-    file = fopen(fileName, "r");
+    line_number = 0;
+    fsin        = 0;
+    file        = fopen(fileName, "r");
     while (fgets(line, sizeof(line), file)) {
         line_number++;
 
@@ -149,7 +151,7 @@ int main(int argc, char *argv[]) {
     }
     fclose(file);
 
-    end = clock();
+    end        = clock();
     time_spent = (double) (end - begin) / CLOCKS_PER_SEC;
 
     printf("\n Time Spend: %f \n", time_spent);
@@ -162,8 +164,8 @@ int CalculatePoints(Complex *comp) {
     SimplexElem elem = -1;
 
     for (int i = 0; i < comp->simplexCount; ++i) {
-        Simplex *simp = getSimpexAt(comp, i);
-        for (int j = 0; j < simp->elementCount; ++j) {
+        Simplex  *simp = getSimpexAt(comp, i);
+        for (int j     = 0; j < simp->elementCount; ++j) {
             SimplexElem elemMax = getElementAt(simp, j);
             if (elemMax > elem) {
                 elem = elemMax;
@@ -194,8 +196,8 @@ Simplex *simplex_intersection(Simplex *a, Simplex *b) {
 }
 
 bool simp_binary_search(Simplex *simp, SimplexElem search) {
-    SimplexElem first = 0;
-    SimplexElem last = simp->elementIndex;
+    SimplexElem first  = 0;
+    SimplexElem last   = simp->elementIndex;
     SimplexElem middle = (first + last) / 2;
 
     while (first <= last) {
